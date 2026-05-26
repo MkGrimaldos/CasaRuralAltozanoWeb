@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería - Casa Rural Altozano</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .galeria-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+        .galeria-grid img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+        .galeria-grid img:hover {
+            transform: scale(1.02);
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Galería de imágenes</h1>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="gallery.html">Galería</a>
+        <a href="contact.html">Contacto</a>
+    </nav>
+</header>
+
+<main>
+    <section>
+        <h2>Descubre la Casa Rural Altozano en imágenes</h2>
+        <p>Haz clic en cualquier foto para verla a tamaño completo (puedes ampliar esta funcionalidad con JavaScript más adelante).</p>
+        
+        <div class="galeria-grid">
+            <!-- Sustituye estos nombres de archivo por los reales que tengas en la carpeta img/ -->
+            <img src="img/casa-exterior.jpg" alt="Vista exterior de la Casa Rural Altozano">
+            <img src="img/salon-chimenea.jpg" alt="Salón con chimenea y ambiente acogedor">
+            <img src="img/cocina.jpg" alt="Cocina totalmente equipada">
+            <img src="img/habitacion.jpg" alt="Habitación doble con ropa de cama incluida">
+            <img src="img/piscina.jpg" alt="Piscina privada con tumbonas">
+            <img src="img/terraza.jpg" alt="Terraza con vistas a la montaña">
+            <img src="img/vistas.jpg" alt="Vistas panorámicas desde la casa rural">
+            <!-- Añade aquí más imágenes según las tengas -->
+        </div>
+        <p style="margin-top:1.5em;"><em>Nota: Las fotos son orientativas. Puedes descargar las imágenes reales desde la página de Booking.com (clic derecho o captura de pantalla) y optimizarlas para web.</em></p>
+    </section>
+</main>
+
+<footer>
+    <p>© 2026 Casa Rural Altozano · Licencia turística: 02012120621</p>
+    <p><a href="aviso-legal.html">Aviso Legal</a> | <a href="politica-privacidad.html">Política de Privacidad</a> | <a href="politica-cookies.html">Política de Cookies</a></p>
+</footer>
+
+</body>
+</html>
