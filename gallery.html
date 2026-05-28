@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galería - Casa Rural Altozano</title>
     <link rel="stylesheet" href="css/style.css">
+    <!-- GLightbox CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
     <style>
         .galeria-grid {
             display: grid;
@@ -39,48 +41,119 @@
 <main>
     <section>
         <h2>Descubre la Casa Rural Altozano en imágenes</h2>
-        <p>Haz clic en cualquier foto para verla a tamaño completo (puedes ampliar esta funcionalidad con JavaScript más adelante).</p>
         
         <div class="galeria-grid">
-            <!-- Sustituye estos nombres de archivo por los reales que tengas en la carpeta img/ -->
-            <img src="img/exterior1.jpg" alt="Vista exterior de la Casa Rural Altozano con la puerta de entrada">
-            <img src="img/exterior2.jpg" alt="Vista exterior de la Casa Rural Altozano y su fachada">
-            <img src="img/exterior3.jpg" alt="Vista exterior de la Casa Rural Altozano y su fachada">
-            <img src="img/barbacoa1.jpg" alt="Barbacoa en el exterior con leña">
-            <img src="img/piscina1.jpg" alt="Piscina privada en el exterior">
-            <img src="img/piscina2.jpg" alt="Piscina privada en el exterior">
-            <img src="img/salon7.jpg" alt="Salón comedor con sofás, estufa de pellets, televisión y cocina office">
-            <img src="img/salon1.jpg" alt="Salón comedor con estantería y estufa de pellets">
-            <img src="img/salon2.jpg" alt="Salón comedor con sofás, estufa de pellets, televisión y cocina office">
-            <img src="img/salon3.jpg" alt="Salón comedor con sofás, estufa de pellets, televisión y cocina office">
-            <img src="img/salon4.jpg" alt="Salón comedor con sofás, estufa de pellets, televisión y cocina office">
-            <img src="img/salon5.jpg" alt="Salón comedor con chimenea, sofás, estufa de pellets, televisión y cocina office">
-            <img src="img/salon6.jpg" alt="Salón comedor con chimenea, sofás, estufa de pellets, televisión y cocina office">
-            <img src="img/salon8.jpg" alt="Salón comedor con sofás, estufa de pellets, televisión y cocina office">
-            <img src="img/salon9.jpg" alt="Salón comedor con chimenea, sofás, estufa de pellets, televisión y cocina office">
-            <img src="img/cocina1.jpg" alt="Cocina office totalmente equipada">
-            <img src="img/cocina2.jpg" alt="Cocina office totalmente equipada">
-            <img src="img/cocina3.jpg" alt="Cocina office totalmente equipada">
-            <img src="img/aseo1.jpg" alt="Baño con lavabo, váter y ducha amplia">
-            <img src="img/aseo2.jpg" alt="Baño con lavabo, váter y ducha amplia">
-            <img src="img/lavadero1.jpg" alt="Lavadora y pila para lavar">
-            <img src="img/lavadero2.jpg" alt="Lavadora y pila para lavar">
-            <img src="img/habitacion1.jpg" alt="Habitación doble con cama de matrimonio y ropa de cama incluida">
-            <img src="img/habitacion2.jpg" alt="Habitación doble con cama de matrimonio y ropa de cama incluida">
-            <img src="img/habitacion3.jpg" alt="Habitación doble con cama de matrimonio y ropa de cama incluida">
-            <img src="img/habitacion4.jpg" alt="Habitación doble con cama de matrimonio y ropa de cama incluida">
-            <img src="img/habitacion5.jpg" alt="Habitación doble con cama de matrimonio y ropa de cama incluida">
-            <img src="img/habitacion6.jpg" alt="Habitación doble con cama de matrimonio y ropa de cama incluida">
-            <img src="img/habitacion7.jpg" alt="Habitación doble armario">
-            <img src="img/habitacion8.jpg" alt="Habitación doble con dos camas y ropa de cama incluida">
-            <img src="img/habitacion9.jpg" alt="Habitación doble con dos camas y ropa de cama incluida">
-            <img src="img/habitacion10.jpg" alt="Habitación doble con dos camas y armario">
-            <img src="img/penyaSanBlas.jpg" alt="Vistas a la Peña San Blas desde la casa rural">
-            <img src="img/romera1.jpg" alt="Caballo blanco en su corral">
-            <img src="img/romera2.jpg" alt="Yegua blanca en su corral">
-            <img src="img/paisaje1.jpg" alt="Vistas panorámicas desde la casa rural">
-            <img src="img/paisaje2.jpg" alt="Vistas panorámicas desde la casa rural">
-            <img src="img/paisaje3.jpg" alt="Vistas panorámicas desde la casa rural">
+            <a href="img/exterior1.jpg" class="glightbox" data-glightbox="title: Exterior; description: Vista de la casa desde la calle">
+                <img src="img/exterior1.jpg" alt="Vista exterior de la Casa Rural Altozano con la puerta de entrada">
+            </a>
+            <a href="img/exterior2.jpg" class="glightbox" data-glightbox="title: Exterior; description: Vista de la casa desde el jardín">
+                <img src="img/exterior2.jpg" alt="Vista exterior de la Casa Rural Altozano y su fachada">
+            </a>
+            <a href="img/exterior3.jpg" class="glightbox" data-glightbox="title: Exterior; description: Vista de la casa desde el jardín">
+                <img src="img/exterior3.jpg" alt="Vista exterior de la Casa Rural Altozano y su fachada">
+            </a>
+            <a href="img/barbacoa1.jpg" class="glightbox"data-glightbox="title: Barbacoa">
+                <img src="img/barbacoa1.jpg" alt="Barbacoa en el exterior con leña">
+            </a>
+            <a href="img/piscina1.jpg" class="glightbox"data-glightbox="title: Piscina">
+                <img src="img/piscina1.jpg" alt="Piscina privada en el exterior">
+            </a>
+            <a href="img/piscina2.jpg" class="glightbox"data-glightbox="title: Piscina">
+                <img src="img/piscina2.jpg" alt="Piscina privada en el exterior">
+            </a>
+            <a href="img/salon6.jpg" class="glightbox" data-glightbox="title: Salón comedor; description: Con sofás, estufa de pellets, televisión y cocina office">
+                <img src="img/salon6.jpg" alt="Salón comedor con sofás, estufa de pellets, televisión y cocina office">
+            </a>
+            <a href="img/salon1.jpg" class="glightbox" data-glightbox="title: Salón comedor; description: Con estantería y estufa de pellets">
+                <img src="img/salon1.jpg" alt="Salón comedor con estantería y estufa de pellets">
+            </a>
+            <a href="img/salon2.jpg" class="glightbox" data-glightbox="title: Salón comedor; description: Con sofás, estufa de pellets, televisión y cocina office">
+                <img src="img/salon2.jpg" alt="Salón comedor con sofás, estufa de pellets, televisión y cocina office">
+            </a>
+            <a href="img/salon3.jpg" class="glightbox" data-glightbox="title: Salón comedor; description: Con sofás, estufa de pellets, televisión y cocina office">
+                <img src="img/salon3.jpg" alt="Salón comedor con sofás, estufa de pellets, televisión y cocina office">
+            </a>
+            <a href="img/salon4.jpg" class="glightbox" data-glightbox="title: Salón comedor; description: Con chimenea, sofás, estufa de pellets, televisión y cocina office">
+                <img src="img/salon4.jpg" alt="Salón comedor con chimenea, sofás, estufa de pellets, televisión y cocina office">
+            </a>
+            <a href="img/salon5.jpg" class="glightbox" data-glightbox="title: Salón comedor; description: Con chimenea, sofás, estufa de pellets, televisión y cocina office">
+                <img src="img/salon5.jpg" alt="Salón comedor con chimenea, sofás, estufa de pellets, televisión y cocina office">
+            </a>
+            <a href="img/salon7.jpg" class="glightbox" data-glightbox="title: Salón comedor; description: Con sofás, estufa de pellets, televisión y cocina office">
+                <img src="img/salon7.jpg" alt="Salón comedor con sofás, estufa de pellets, televisión y cocina office">
+            </a>
+            <a href="img/salon8.jpg" class="glightbox" data-glightbox="title: Salón comedor; description: Con chimenea, sofás, estufa de pellets, televisión y cocina office">
+                <img src="img/salon8.jpg" alt="Salón comedor con chimenea, sofás, estufa de pellets, televisión y cocina office">
+            </a>
+            <a href="img/cocina1.jpg" class="glightbox" data-glightbox="title: Cocina; description: Totalmente equipada">
+                <img src="img/cocina1.jpg" alt="Cocina office totalmente equipada">
+            </a>
+            <a href="img/cocina2.jpg" class="glightbox" data-glightbox="title: Cocina; description: Totalmente equipada">
+                <img src="img/cocina2.jpg" alt="Cocina office totalmente equipada">
+            </a>
+            <a href="img/cocina3.jpg" class="glightbox" data-glightbox="title: Cocina; description: Totalmente equipada">
+                <img src="img/cocina3.jpg" alt="Cocina office totalmente equipada">
+            </a>
+            <a href="img/aseo1.jpg" class="glightbox" data-glightbox="title: Baño; description: Con lavabo, váter y ducha amplia">
+                <img src="img/aseo1.jpg" alt="Baño con lavabo, váter y ducha amplia">
+            </a>
+            <a href="img/aseo2.jpg" class="glightbox" data-glightbox="title: Baño; description: Con lavabo, váter y ducha amplia">
+                <img src="img/aseo2.jpg" alt="Baño con lavabo, váter y ducha amplia">
+            </a>
+            <a href="img/lavadero1.jpg" class="glightbox" data-glightbox="title: Lavadero; description: Lavadora y pila para lavar">
+                <img src="img/lavadero1.jpg" alt="Lavadora y pila para lavar">
+            </a>
+            <a href="img/lavadero2.jpg" class="glightbox" data-glightbox="title: Lavadero; description: Lavadora y pila para lavar">
+                <img src="img/lavadero2.jpg" alt="Lavadora y pila para lavar">
+            </a>
+            <a href="img/habitacion1.jpg" class="glightbox" data-glightbox="title: Habitación doble; description: Cama de matrimonio y ropa de cama incluida">
+                <img src="img/habitacion1.jpg" alt="Habitación doble con cama de matrimonio y ropa de cama incluida">
+            </a>
+            <a href="img/habitacion2.jpg" class="glightbox" data-glightbox="title: Habitación doble; description: Cama de matrimonio y ropa de cama incluida">
+                <img src="img/habitacion2.jpg" alt="Habitación doble con cama de matrimonio y ropa de cama incluida">
+            </a>
+            <a href="img/habitacion3.jpg" class="glightbox" data-glightbox="title: Habitación doble; description: Cama de matrimonio y ropa de cama incluida">
+                <img src="img/habitacion3.jpg" alt="Habitación doble con cama de matrimonio y ropa de cama incluida">
+            </a>
+            <a href="img/habitacion4.jpg" class="glightbox" data-glightbox="title: Habitación doble; description: Cama de matrimonio y ropa de cama incluida">
+                <img src="img/habitacion4.jpg" alt="Habitación doble con cama de matrimonio y ropa de cama incluida">
+            </a>
+            <a href="img/habitacion5.jpg" class="glightbox" data-glightbox="title: Habitación doble; description: Cama de matrimonio y ropa de cama incluida">
+                <img src="img/habitacion5.jpg" alt="Habitación doble con cama de matrimonio y ropa de cama incluida">
+            </a>
+            <a href="img/habitacion6.jpg" class="glightbox" data-glightbox="title: Habitación doble; description: Cama de matrimonio y ropa de cama incluida">
+                <img src="img/habitacion6.jpg" alt="Habitación doble con cama de matrimonio y ropa de cama incluida">
+            </a>
+            <a href="img/habitacion7.jpg" class="glightbox" data-glightbox="title: Habitación; description: Armario amplio">
+                <img src="img/habitacion7.jpg" alt="Habitación doble armario">
+            </a>
+            <a href="img/habitacion8.jpg" class="glightbox" data-glightbox="title: Habitación doble; description: Dos camas y ropa de cama incluida">
+                <img src="img/habitacion8.jpg" alt="Habitación doble con dos camas y ropa de cama incluida">
+            </a>
+            <a href="img/habitacion9.jpg" class="glightbox" data-glightbox="title: Habitación doble; description: Dos camas y ropa de cama incluida">
+                <img src="img/habitacion9.jpg" alt="Habitación doble con dos camas y ropa de cama incluida">
+            </a>
+            <a href="img/habitacion10.jpg" class="glightbox" data-glightbox="title: Habitación; description: Dos camas y armario">
+                <img src="img/habitacion10.jpg" alt="Habitación doble con dos camas y armario">
+            </a>
+            <a href="img/penyaSanBlas.jpg" class="glightbox" data-glightbox="title: Paisaje; description: Vistas a la Peña San Blas">
+                <img src="img/penyaSanBlas.jpg" alt="Vistas a la Peña San Blas desde la casa rural">
+            </a>
+            <a href="img/romera1.jpg" class="glightbox" data-glightbox="title: Animales; description: Caballo blanco en su corral">
+                <img src="img/romera1.jpg" alt="Caballo blanco en su corral">
+            </a>
+            <a href="img/romera2.jpg" class="glightbox" data-glightbox="title: Animales; description: Yegua blanca en su corral">
+                <img src="img/romera2.jpg" alt="Yegua blanca en su corral">
+            </a>
+            <a href="img/paisaje1.jpg" class="glightbox" data-glightbox="title: Paisajes; description: Vistas panorámicas desde la casa rural">
+                <img src="img/paisaje1.jpg" alt="Vistas panorámicas desde la casa rural">
+            </a>
+            <a href="img/paisaje2.jpg" class="glightbox" data-glightbox="title: Paisajes; description: Vistas panorámicas desde la casa rural">
+                <img src="img/paisaje2.jpg" alt="Vistas panorámicas desde la casa rural">
+            </a>
+            <a href="img/paisaje3.jpg" class="glightbox" data-glightbox="title: Paisajes; description: Vistas panorámicas desde la casa rural">
+                <img src="img/paisaje3.jpg" alt="Vistas panorámicas desde la casa rural">
+            </a>
         </div>
         <p style="margin-top:1.5em;"><em>Nota: Las fotos son orientativas, puede haber algunos cambios.</em></p>
     </section>
@@ -90,6 +163,15 @@
     <p>© 2026 Casa Rural Altozano · Licencia turística: 02012120621</p>
     <p><a href="aviso-legal.html">Aviso Legal</a> | <a href="politica-privacidad.html">Política de Privacidad</a> | <a href="politica-cookies.html">Política de Cookies</a></p>
 </footer>
-
+<!-- GLightbox JS -->
+<script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+<script>
+    // Inicializar GLightbox
+    const lightbox = GLightbox({
+        touchNavigation: true,
+        loop: true,
+        autoplayVideos: false
+    });
+</script>
 </body>
 </html>
